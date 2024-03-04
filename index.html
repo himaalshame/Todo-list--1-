@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+
+            <h1 class="text-center mt-4">
+                <i class="fas fa-book-open text-primary"></i>
+                My <span class="text-primary">Book</span> List</h1>
+        
+        <form id="book-form" style="width: 70%; margin: auto;" >
+            <div class="form-group mt-4">
+                <label for="title">Title</label>
+                <input type="text" class="form-control" id="title">
+            </div>
+            <div class="form-group mt-4">
+                <label for="isbn">Isbn</label>
+                <input type="text" class="form-control" id="isbn">
+            </div>
+            <div class="form-group mt-4">
+                <label for="auther">Auther</label>
+                <input type="text" class="form-control" id="auther">
+            </div>
+            <input type="submit" name="add book" class="btn btn-primary mt-4" style="width: 100%; ">
+        </form>
+        <table class="table table-striped mt-4" style="width: 70%; margin: auto;">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Isbn</th>
+                    <th>Auther</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="book-list"></tbody>
+        </table>
+    </div>
+
+
+
+    <script src="main.js"></script>
+    
+</body>
+</html>
